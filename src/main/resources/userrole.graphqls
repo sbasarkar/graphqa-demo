@@ -1,0 +1,12 @@
+type UserRole {
+  userId: String!
+  scope: String!
+}
+
+extend type Query {
+  findUserRole(userId: String): [UserRole]!
+}
+
+extend type Mutation {
+  addUserRole(userId: String!, scope: String!) : UserRole!
+}
