@@ -45,6 +45,7 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('org.springframework.boot:spring-boot-starter-actuator')
     compile('org.projectlombok:lombok:1.16.6')
+    compile('org.flywaydb:flyway-gradle-plugin:5.0.4')
 	compile group: 'com.graphql-java', name: 'graphql-spring-boot-starter', version: '5.0.2'
 	compile group: 'com.graphql-java', name: 'graphql-java-tools', version: '5.2.4'
 	compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.8.1'

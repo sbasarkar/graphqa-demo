@@ -1,5 +1,7 @@
 package com.demo.graphql.resolver;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -17,8 +19,8 @@ public class UserResolver implements GraphQLResolver<User>{
 		this.repo =  repo;
 	}
 	
-	public UserRole getRole(User user) {
-		return repo.getOne(user.getId());
+	public List<UserRole> getRole(User user) {
+		return repo.findByUser(user.getId());
 	}
 
 }

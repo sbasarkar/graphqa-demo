@@ -2,9 +2,9 @@ type User {
   id: String!
   firstName: String!
   lastName: String!
-  userName: String!
+  username: String!
   password: String!
-  role: UserRole!
+  role: [UserRole]!
 }
 
 type Query {
